@@ -5,9 +5,48 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
+	 <style>
+        /* Style for the unordered list to display items inline */
+        ul {
+            list-style-type: none; /* Remove bullets from list */
+            display: flex; /* Arrange items horizontally */
+            justify-content: center; /* Center align list items */
+            gap: 20px; /* Space between items */
+            padding: 0; /* Remove default padding */
+        }
+        li img {
+            width: 200px; /* Set image width */
+            height: auto; /* Keep aspect ratio */
+            border-radius: 10px; /* Optional: rounded corners */
+            transition: transform 0.3s; /* Smooth scaling on hover */
+        }
+        li img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+    </style>
 
 <body>
-	<!-- the entire body must be written by student -->
+
+    <h1>Dog Adoption</h1>
+    <p>Explore different dog breeds and learn more about them!</p>
+
+    <!-- Unordered list for dog breeds -->
+    <ul>
+        <!-- List item for Golden Retriever -->
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Golden_Retriever" target="_blank">
+                <img src="https://link-to-golden-retriever-image.com/image.jpg" alt="Golden Retriever">
+            </a>
+        </li>
+        
+        <!-- List item for Poodle -->
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Poodle" target="_blank">
+                <img src="https://link-to-poodle-image.com/image.jpg" alt="Poodle">
+            </a>
+        </li>
+    </ul>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
